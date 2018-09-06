@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<h2>Home Page</h2>
+<p>
+This is a cross platform app made to for door unlocking remotely.
+</p>
+<ion-content>
+<div padding>
+    <button *ngIf='!USER.isLoggedIn()' block (click)='goto("login")'>LogIn</button><br><br><br>
+    <button *ngIf='!USER.isLoggedIn()' block (click)='goto("signup")'>Sign UP</button>
+    <button *ngIf='USER.isLoggedIn()'block (click)='logout("logout")'>Logout</button>
+  </div>
+</ion-content>
+

@@ -1,0 +1,53 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Door Unlock</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+      <ion-list>
+  
+      <ion-item>
+        <ion-label>UserName:</ion-label>
+        <ion-input type="text" [(ngModel)]='username'></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label>DoorName:</ion-label>
+          <ion-input type="text" [(ngModel)]='door'></ion-input>
+        </ion-item>
+    
+      <ion-item>
+        <ion-label>Password:</ion-label>
+        <ion-input type="password" [(ngModel)]='password'></ion-input>
+      </ion-item>
+  
+      <div padding>
+        <button (click)='toUnlock()'>Unlock</button>
+      </div>
+  
+      <div padding>
+        {{response}}
+      </div>
+
+
+      <div padding>
+        <button (click)='tochange()'>ChangePassword</button>
+      </div>
+
+      <div padding>
+          <button (click)='toadd()'>addDevice</button>
+        </div>
+    
+    </ion-list>
+    
+    
+  
+  </ion-content>
+  
+  
+  

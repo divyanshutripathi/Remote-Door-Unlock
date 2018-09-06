@@ -1,0 +1,50 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register the product</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input type="text" [(ngModel)]='Name'></ion-input>
+      </ion-item>
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" [(ngModel)]='Username'></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]='Password'></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label >Retype Password</ion-label>
+        <ion-input (keyup)='chPasswd()' type="password" [(ngModel)]='repassword'></ion-input>
+      </ion-item>
+      <p>{{output}}</p>
+  
+  </ion-list>
+  
+  <div padding>
+    <button (click)='onsignup()'>Sign Up</button>
+  </div>
+
+  <div padding>
+    {{response}}
+  </div>
+
+</ion-content>
+
