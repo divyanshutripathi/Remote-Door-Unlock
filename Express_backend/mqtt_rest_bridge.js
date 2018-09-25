@@ -20,7 +20,7 @@ client.on('connect', ()=>{
     console.log(message.toString());
 
     var options = {
-      uri: "http://18.188.167.6:3000/sensor",
+      uri: "http://server_IP:3000/sensor",
       headers: {
         'Content-Type': "application/json"
     
